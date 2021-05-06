@@ -52,10 +52,10 @@ const Checkout = ({ cart, onCaptureCheckout, order, error }) => {
             <Button component={Link} variant="outlined" type="button" to="/">Back to home</Button>
         </>
     ) : (
-        <div className={classes.spinner}>
-            <CircularProgress />
-        </div>
-    ));
+            <div className={classes.spinner}>
+                <CircularProgress />
+            </div>
+        ));
 
     if (error) {
         Confirmation = () => (
